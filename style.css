@@ -7,4 +7,7 @@ ul li{
     padding: 10px;
     text-transform: uppercase;
     color: white;
+    display: inline;
+    /*inline element to make width of backgrounf same length as the tezt (e.g. display:inline;.... replace input with block for block element*/
+    
 }
