@@ -3,7 +3,7 @@ ul li {
     BLOCK = background will stretch across whole page. INLINE= background will only stretch as long as its content*/
     /*added float left and width of 160px to make page tabs spaced out equally across the page*/
     /*margin left used for moving page tabs to centre of page*/
-    
+
     border-radius: 20px;
     border: 3px solid #808080;
     box-shadow: 3px 3px 3px #00000061;
@@ -16,18 +16,92 @@ ul li {
     width: 160px;
     list-style: none;
     margin-left: 150px;
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-   
-
 }
+
+
+
+
 
 a {
     color: white;
 }
 
-*{
+
+
+
+
+* {
     /*asterisk is used to remove all default padding and margins*/
     margin: 0;
-    padding:0;
+    padding: 0;
+}
+
+
+
+
+
+body{
+    display: grid;
+grid-template-columns: 20% 50% 30%;
+grid-template-rows: auto;
+grid-template-areas: 
+"header header header"
+"nav nav nav"
+"aside main main"
+
+"footer footer footer"
+;
+}
+
+
+
+
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: header;
+}
+
+
+
+
+
+nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+
+
+
+
+
+main {
+    background-color: darkblue;
+    color: white;
+    grid-area: main;
+}
+
+
+
+
+
+aside {
+    background-color: lightgreen;
+    grid-area: aside;
+}
+
+
+
+
+
+
+footer {
+    background-color: darkgreen;
+    color: white;
+    grid-area: footer;
 }
