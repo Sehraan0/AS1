@@ -1,11 +1,8 @@
-/*inline element to make width of backgrounf same length as the tezt (e.g. display:inline;.... replace input with block for block element
-    BLOCK = background will stretch across whole page. INLINE= background will only stretch as long as its content*/
-
-/*added float left and width of 160px to make page tabs same length*/
-
-/*margin left used for moving page tabs to centre of page*/
-
 ul li {
+    /*inline element to make width of backgrounf same length as the tezt (e.g. display:inline;.... replace input with block for block element
+    BLOCK = background will stretch across whole page. INLINE= background will only stretch as long as its content*/
+    /*added float left and width of 160px to make page tabs same length*/
+    /*margin left used for moving page tabs to centre of page*/
     border-radius: 20px;
     border: 3px solid #666;
     box-shadow: 3px 3px 3px #000;
@@ -17,7 +14,7 @@ ul li {
     display: inline-block;
     width: 160px;
     list-style: none;
-    margin-left: 120px;
+    margin-left: 120px; 
 }
 
 body {
@@ -26,5 +23,10 @@ body {
 
 a {
     color: white;
+}
 
+*{
+    /*asterisk is used to remove all default padding and margins*/
+    margin: 0;
+    padding:0;
 }
