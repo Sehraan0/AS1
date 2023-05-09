@@ -3,11 +3,17 @@ ul li{
     border: 3px solid #666;
     box-shadow: 3px 3px 3px #000;
     margin-bottom: 10px;
-    background-color: darkblue;
+    background-color: rgb(139, 0, 0);
     padding: 10px;
     text-transform: uppercase;
-    color: white;
-    display: inline;
-    /*inline element to make width of backgrounf same length as the tezt (e.g. display:inline;.... replace input with block for block element*/
+    color: rgb(0, 0, 0);
+    display: block;
+    float: left;
+    width: 160px;
+
+    /*inline element to make width of backgrounf same length as the tezt (e.g. display:inline;.... replace input with block for block element
+    BLOCK = background will stretch across whole page. INLINE= background will only stretch as long as its content*/
+
+    /*added float left and width of 160px to make page tabs same length*/
     
 }
