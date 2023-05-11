@@ -8,7 +8,7 @@ ul li {
     border: 3px solid #808080;
     box-shadow: 3px 3px 3px #00000061;
     margin-bottom: 10px;
-    background-color: #000000;
+    background-color: #808080;
     padding: 10px;
     text-transform: uppercase;
     color: #000000;
@@ -25,7 +25,7 @@ ul li {
 
 
 a {
-    color: white;
+    color: #1d1d1d;
 }
 
 
@@ -59,7 +59,7 @@ body {
 
 
 header {
-    background-color: blue;
+    background-color: #1d1d1d;
     color: white;
     padding: 20px;
     text-align: center;
@@ -71,8 +71,9 @@ header {
 
 
 nav {
-    background-color: yellow;
+    background-color: #1d1d1d;
     grid-area: nav;
+    
 }
 
 
@@ -80,7 +81,7 @@ nav {
 
 
 main {
-    background-color: darkblue;
+    background-color: #1d1d1d;
     color: white;
     grid-area: main;
 }
@@ -90,8 +91,9 @@ main {
 
 
 aside {
-    background-color: lightgreen;
+    background-color: #1d1d1d;
     grid-area: aside;
+    color: white;
 }
 
 
@@ -100,7 +102,11 @@ aside {
 
 
 footer {
-    background-color: darkgreen;
+    background-color: #1d1d1d;
     color: white;
     grid-area: footer;
 } 
+
+ul li a { 
+    color: white;
+}
