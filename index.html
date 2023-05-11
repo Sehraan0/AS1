@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
+
     <link rel="stylesheet" href="main.css" media="screen">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
@@ -15,14 +15,17 @@
 
 </head>
 
-<body>
+<body id="clicked">
+
     <!--Use relative url when linking `files from own website. E.g.   < a href ="index.html">Home Page</a>    -->
-    <!-- Include the following sections in the body; header, nav, main, aside, footer-->
+    <!-- Include the following sections in the body; header, nav, main, aside, footer. These are called Semantic Elements -->
     <header>
-       <a class="Hamburger" href="#"></a>
+        <!--<a class="Hamburger" href="#toggle"></a>-->
+        <a href="#clicked" class="on Hamburger"></a>
+        <a href="#" class="off Hamburger"></a>
         <h1>Home header</h1>
     </header>
-   
+
 
     <nav>
         <ul>
@@ -37,10 +40,10 @@
 
 
     <main>
-        content - main
+        Hello, my name is Serhaan and i am a student at the University of Northampton and this is my Portffolio Website.
     </main>
 
-    <aside> 
+    <aside>
         sidebar - aside
     </aside>
 

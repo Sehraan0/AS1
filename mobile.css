@@ -49,7 +49,6 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
         "header"
-        "nav"
         "main"
         "aside"
         "footer"
@@ -76,8 +75,8 @@ header {
 nav {
     background-color: yellow;
     grid-area: nav;
-    
-    
+
+
 }
 
 
@@ -115,17 +114,69 @@ footer {
     /*this code is added to create the hamburger icon but it only adds the top and bottom line, the code below will then add the middle line*/
     height: 0.8em;
     width: 1.25em;
-    display: grid; /* Lecture notes showed display:block, had to change to grid otherwise icone middle line would move slightly right - ask chris*/
+    display: grid;
+    /* Lecture notes showed display:block, had to change to grid otherwise icone middle line would move slightly right, i used
+    developer tools (inpsect element to see which one would work - ask chris*/
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
     border-radius: 0.1em;
 }
 
+
+
+
 .Hamburger::before {
     /* This is pseudo element which is added after the code above to add the middle line in the hamburger icon*/
     content: '';
-    position:absolute;
+    position: absolute;
+    display: grid; /*Middle line moving slighly right resolved by adding display: grid here*/
     width: 1.25em;
     margin-top: 0.3em;
     border-top: 0.2em solid #fff;
+}
+
+
+
+
+nav {
+    /*This is one of the steps for moving the navigation to the hamburger icon so it can toggle on and off and this way it wont be on the page all the time*/
+    display: block;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+}
+
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* CSS code for toggling nav on and off. Target selector only applies style when its targeted*/
+.clicked .on {
+    display: block;
+}
+
+#clicked .off {
+    display: none;
+}
+
+#clicked:target .on {
+    display: none;
+}
+
+#clicked:target .off {
+    display: block;
+}
+
+#clicked:target nav {
+    display: none;
 }
