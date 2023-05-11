@@ -112,9 +112,20 @@ footer {
 
 
 .Hamburger {
+    /*this code is added to create the hamburger icon but it only adds the top and bottom line, the code below will then add the middle line*/
     height: 0.8em;
     width: 1.25em;
-    display: block;
+    display: grid; /* Lecture notes showed display:block, had to change to grid otherwise icone middle line would move slightly right - ask chris*/
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+}
+
+.Hamburger::before {
+    /* This is pseudo element which is added after the code above to add the middle line in the hamburger icon*/
+    content: '';
+    position:absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid #fff;
 }
