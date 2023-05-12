@@ -12,16 +12,17 @@ ul li {
     padding: 10px;
     text-transform: uppercase;
     color: #000000;
-    display: inline-block;
+    display: inline-block; 
     width: 160px;
     list-style: none;
     margin-left: 150px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
-
-
-
+ nav ul li ul li {
+  display: table-cell; /* added this so submenu are displayed underneath the main page buttons. i added table cell to display on the code
+                          above but that pushed all the buttons to the left*/
+ }
 
 
 a {
@@ -107,6 +108,26 @@ footer {
     grid-area: footer;
 }
 
-ul li a { 
+nav ul a{ 
     color: white;
+}
+
+nav > ul > li {
+    /* direct descendent used to target element one level down*/
+    position: relative;
+}
+
+
+nav ul ul {
+    position: absolute; 
+    display:block;
+    
+    padding: 0; 
+    width: 100%;
+    display: none;
+}
+
+nav > ul > li:hover ul {
+    /* to add the hover effect for the submenu, when <li> is hovered over the submenu <ul> will be shown*/
+    display:block;
 }
