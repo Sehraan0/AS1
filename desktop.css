@@ -121,15 +121,19 @@ nav > ul > li {
 nav ul ul {
     position: absolute; 
     display:block;
-    
     padding: 0; 
     width: 100%;
     opacity: 0;
+    transition: opacity 0.5s ease-in; /* the submenu will fade in and the timer is how long it will atake to fade in*/ 
+    pointer-events: none ;
+    
 }
 
 
 nav > ul > li:hover ul {
     /* to add the hover effect for the submenu, when <li> is hovered over the submenu <ul> will be shown*/
     opacity: 1;
+    pointer-events: auto; /*  pointer event used for sub menu so it becomes interactive when being hovered over*/
 }
+
 
