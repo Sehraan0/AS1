@@ -85,6 +85,7 @@ main {
     background-color: #1d1d1d;
     color: white;
     grid-area: main;
+    height: 84.5vh;
 }
 
 
@@ -135,5 +136,4 @@ nav > ul > li:hover ul {
     opacity: 1;
     pointer-events: auto; /*  pointer event used for sub menu so it becomes interactive when being hovered over*/
 }
-
 

@@ -9,10 +9,10 @@ ul li {
     box-shadow: 3px 3px 3px #00000061;
     margin-bottom: 10px;
     background-color: #808080;
-    padding: 10px;
+    padding: 4px;
     text-transform: uppercase;
     color: #ffffff;
-    display: inline-block;
+    display: inline-table;
     width: 160px;
     list-style: none;
     margin-left: 1px;
@@ -21,7 +21,8 @@ ul li {
 
 }
 
-ul li a { 
+
+ul li a {
     color: white;
 }
 
@@ -30,8 +31,8 @@ ul li a {
 
 
 a {
-     color: #1d1d1d;
-    
+    color: #1d1d1d;
+
 }
 
 
@@ -78,7 +79,7 @@ header {
 
 
 nav {
-    background-color:#1d1d1d;
+    background-color: #1d1d1d;
     grid-area: nav;
 
 
@@ -92,7 +93,7 @@ main {
     background-color: #1d1d1d;
     color: white;
     grid-area: main;
-    
+
 }
 
 
@@ -111,7 +112,7 @@ aside {
 
 
 footer {
-    background-color:#1d1d1d;
+    background-color: #1d1d1d;
     color: white;
     grid-area: footer;
 }
@@ -136,7 +137,8 @@ footer {
     /* This is pseudo element which is added after the code above to add the middle line in the hamburger icon*/
     content: '';
     position: absolute;
-    display: grid; /*Middle line moving slighly right resolved by adding display: grid here*/
+    display: grid;
+    /*Middle line moving slighly right resolved by adding display: grid here*/
     width: 1.25em;
     margin-top: 0.3em;
     border-top: 0.2em solid #fff;
@@ -148,12 +150,14 @@ footer {
 nav {
     /*This is one of the steps for moving the navigation to the hamburger icon so it can toggle on and off and this way it wont be on the page all the time*/
     display: block;
-    background-color:#1d1d1d;
+    background-color: #1d1d1d;
     position: fixed;
     top: 0;
     left: 50%;
     width: 50%;
     height: 100vh;
+    transition: transform 0.5s ease-in;/*for slide in and out effect for menu*/
+    
 }
 
 
@@ -185,6 +189,9 @@ a {
 }
 
 #clicked:target nav {
-    display: none;
+    display: block;
+    transform: translate(100%,0); /* slide in and out effect for menu*/
+    
 }
+
 
