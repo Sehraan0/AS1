@@ -62,28 +62,24 @@
     <main>
         content
 
-       
         <!-- VALUE Attribute will enter your text inside the textbox, use PLACEHOLDER attribute instead to show user what to write in textbox -->
-       
-        <form action="" method="post">  <!-- POST to make it more secure it encrypts information in the url-->
 
-            <label for="textInput">First Name</label>  <!-- In label tag the FOR and in INPUT tag the ID have to be the same-->
+        <form action="mailto:serhaan.saleem21@my.northampton.ac.uk?subject=Contact" method="GET">
+            <label for="textInput">First Name</label>
+
             <input type="text" name="textInput" id="textInput" placeholder="Enter First Name">
 
             <label for="SurnameInput">Surname</label>
             <input type="text" name="SurnameInput" id="SurnameInput" placeholder="Enter Surname here">
 
-            <label for="emailInput">Email</label>
-            <input type="text" name="emailInput" id="emailInput" placeholder="Type Email here">
+            <label for="subject">Email</label>
+            <input type="text" name="emailInput" id="subject" placeholder="Type Email here">
 
-            <label type="text">Message</label>
-            <textarea name="text"></textarea> <!-- Text area doesnt need a VALUE Attribute, type text in tags -->
-
-            <input type="submit" value="submit">
-
+            <label for="body">Message</label>
+            <textarea name="body" id="body"></textarea>
+            <input type="submit" value="send">
         </form>
 
-           
 
 
 

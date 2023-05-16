@@ -195,3 +195,45 @@ a {
 }
 
 
+form {
+
+    display: grid;
+    width: 400px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 1em;
+    padding: 200px;
+   
+}
+
+
+
+
+input[type="submit"] {
+    grid-column: 2;
+}
+
+
+
+textarea {
+    background-color: #808080;
+    padding: 1.5em;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+   
+   
+}
+
+input{
+    background-color: #808080;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+input::placeholder { /* two colons before placeholder to change placeholder text colour*/
+color: #000000;
+}

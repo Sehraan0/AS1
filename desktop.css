@@ -12,17 +12,19 @@ ul li {
     padding: 10px;
     text-transform: uppercase;
     color: #000000;
-    display: inline-block; 
+    display: inline-block;
     width: 160px;
     list-style: none;
     margin-left: 150px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
- nav ul li ul li {
-  display: table-cell; /* added this so submenu are displayed underneath the main page buttons. i added table cell to display on the code
+
+nav ul li ul li {
+    display: table-cell;
+    /* added this so submenu are displayed underneath the main page buttons. i added table cell to display on the code
                           above but that pushed all the buttons to the left*/
- }
+}
 
 
 a {
@@ -30,7 +32,9 @@ a {
 }
 
 
-
+h2 {
+    text-decoration: underline;
+}
 
 
 * {
@@ -85,7 +89,7 @@ main {
     background-color: #1d1d1d;
     color: white;
     grid-area: main;
-    height: 84.5vh;
+    height: max-content;
 }
 
 
@@ -93,7 +97,7 @@ main {
 
 
 aside {
-    background-color:#1d1d1d;
+    background-color: #1d1d1d;
     color: white;
     grid-area: aside;
 }
@@ -109,31 +113,75 @@ footer {
     grid-area: footer;
 }
 
-nav ul a{ 
+nav ul a {
     color: white;
 }
 
-nav > ul > li {
+nav>ul>li {
     /* direct descendent used to target element one level down*/
     position: relative;
 }
 
 
 nav ul ul {
-    position: absolute; 
-    display:block;
-    padding: 0; 
+    position: absolute;
+    display: block;
+    padding: 0;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease-in; /* the submenu will fade in and the timer is how long it will atake to fade in*/ 
-    pointer-events: none ;
+    transition: opacity 0.5s ease-in;
+    /* the submenu will fade in and the timer is how long it will atake to fade in*/
+    pointer-events: none;
+
+}
+
+
+nav>ul>li:hover ul {
+    /* to add the hover effect for the submenu, when <li> is hovered over the submenu <ul> will be shown*/
+    opacity: 1;
+    pointer-events: auto;
+    /*  pointer event used for sub menu so it becomes interactive when being hovered over*/
+}
+
+form {
+
+    display: grid;
+    width: 400px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 1em;
+    padding: 200px;
+   
+}
+
+
+
+
+input[type="submit"] {
+    grid-column: 2;
+}
+
+
+
+textarea {
+    background-color: #808080;
+    padding: 1.5em;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+   
+   
+}
+
+input{
+    background-color: #808080;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
     
 }
 
-
-nav > ul > li:hover ul {
-    /* to add the hover effect for the submenu, when <li> is hovered over the submenu <ul> will be shown*/
-    opacity: 1;
-    pointer-events: auto; /*  pointer event used for sub menu so it becomes interactive when being hovered over*/
+input::placeholder { /* two colons before placeholder to change placeholder text colour*/
+color: #000000;
 }
-
