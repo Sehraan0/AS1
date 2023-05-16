@@ -16,7 +16,7 @@
     <header>
         <a href="#clicked" class="on Hamburger"></a>
         <a href="#" class="off Hamburger"></a>
-        <h1>Contact</h1>
+        <h1>Contact Us</h1>
     </header>
 
     <nav>
@@ -41,26 +41,57 @@
                     <li><a href=ContactSub2.html> test</a></li>
                     <li><a href=ContactSub3.html> test</a></li>
                 </ul>
-                <li> <a href="workexperience.html">Work Experience</a>
-                    <ul>
-                        <li> <a href=WorkSub1.html> test</a> </li>
-                        <li><a href=WorkSub2.html> test</a></li>
-                        <li><a href=WorkSub3.html> test</a></li>
-                    </ul>
-                    <li> <a href="sitereport.html">Site Report</a>
-                        <ul>
-                            <li> <a href=SiteSub1.html>test </a></li>
-                            <li> <a href=SiteSub2.html> test</a></li>
-                            <li> <a href=SiteSub3.html>test </a></li>
-                        </ul>
-                    </li>
-                </li>
+            <li> <a href="workexperience.html">Work Experience</a>
+                <ul>
+                    <li> <a href=WorkSub1.html> test</a> </li>
+                    <li><a href=WorkSub2.html> test</a></li>
+                    <li><a href=WorkSub3.html> test</a></li>
+                </ul>
+            <li> <a href="sitereport.html">Site Report</a>
+                <ul>
+                    <li> <a href=SiteSub1.html>test </a></li>
+                    <li> <a href=SiteSub2.html> test</a></li>
+                    <li> <a href=SiteSub3.html>test </a></li>
+                </ul>
+            </li>
+            </li>
             </li>
         </ul>
     </nav>
 
     <main>
         content
+
+       
+        <!-- VALUE Attribute will enter your text inside the textbox, use PLACEHOLDER attribute instead to show user what to write in textbox -->
+       
+        <form action="" method="post">  <!-- POST to make it more secure it encrypts information in the url-->
+
+            <label for="textInput">First Name</label>  <!-- In label tag the FOR and in INPUT tag the ID have to be the same-->
+            <input type="text" name="textInput" id="textInput" placeholder="Enter First Name">
+
+            <label for="SurnameInput">Surname</label>
+            <input type="text" name="SurnameInput" id="SurnameInput" placeholder="Enter Surname here">
+
+            <label for="emailInput">Email</label>
+            <input type="text" name="emailInput" id="emailInput" placeholder="Type Email here">
+
+            <label type="text">Message</label>
+            <textarea name="text"></textarea> <!-- Text area doesnt need a VALUE Attribute, type text in tags -->
+
+            <input type="submit" value="submit">
+
+        </form>
+
+           
+
+
+
+
+
+
+
+
     </main>
 
     <aside>
