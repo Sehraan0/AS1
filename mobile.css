@@ -93,6 +93,7 @@ main {
     background-color: #1d1d1d;
     color: white;
     grid-area: main;
+    height: 100vh;
 
 }
 

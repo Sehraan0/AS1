@@ -61,22 +61,22 @@
 
     <main>
         content
-
+        <!--THIS IS FOR THE CONTACT FORM AND MAILTO WHICH ALLOWS THE USER TO SEND EMAIL BY PRESSING SUBMIT-->
         <!-- VALUE Attribute will enter your text inside the textbox, use PLACEHOLDER attribute instead to show user what to write in textbox -->
 
-        <form action="mailto:serhaan.saleem21@my.northampton.ac.uk?subject=Contact" method="GET">
+        <form action="mailto:serhaan.saleem21@my.northampton.ac.uk?subject=Contact" method="GET"> <!--POST makes it more secure, it encryps the informstion on the url-->
             <label for="textInput">First Name</label>
-
-            <input type="text" name="textInput" id="textInput" placeholder="Enter First Name">
+            <input type="text" name="textInput" id="textInput" placeholder="Enter First Name">    
+            <!-- In label tag the FOR and in INPUT tag the ID have to be the same-->
 
             <label for="SurnameInput">Surname</label>
-            <input type="text" name="SurnameInput" id="SurnameInput" placeholder="Enter Surname here">
+            <input type="text" name="SurnameInput" id="SurnameInput" placeholder="Enter Surname here"> <!-- use placeholder to tell user what to write in textbox-->
 
             <label for="subject">Email</label>
             <input type="text" name="emailInput" id="subject" placeholder="Type Email here">
 
             <label for="body">Message</label>
-            <textarea name="body" id="body"></textarea>
+            <textarea name="body" id="body"></textarea> <!-- Text area doesnt need a VALUE Attribute, type text in tags -->
             <input type="submit" value="send">
         </form>
 
