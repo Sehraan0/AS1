@@ -16,7 +16,7 @@ ul li {
     display: inline-block;
     width: 160px; /*width of 160px to make page tabs spaced out equally across the page*/
     list-style: none;
-    margin-left: 7em;  /*margin left used for moving page tabs to centre of page*/
+    margin-left: 5em;  /*margin left used for moving page tabs to centre of page*/
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     
@@ -37,7 +37,6 @@ a {
 h2 {
     text-decoration: underline;
 }
-
 
 * {
     /*asterisk is used to remove all default padding and margins*/
@@ -91,6 +90,7 @@ main {
     background-color: #1d1d1d;
     color: white;
     grid-area: main;
+  
     
 }
 
